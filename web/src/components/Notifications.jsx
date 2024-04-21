@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import { useLiveQuery } from "dexie-react-hooks";
+import MuiAudioPlayer from "mui-audio-player-plus";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Trans, useTranslation } from "react-i18next";
 import { useOutletContext } from "react-router-dom";
@@ -297,6 +298,7 @@ const NotificationItem = (props) => {
           <NotificationBody notification={notification} />
           {maybeActionErrors(notification)}
         </Typography>
+        {attachment && attachment.type.startsWith("audio/") && <MuiAudioPlayer id={notification.id} display="timeline" containerWidth={300} inline src={attachment.url} />}
         {attachment && <Attachment attachment={attachment} />}
         {tags && (
           <Typography sx={{ fontSize: 14 }} color="text.secondary">

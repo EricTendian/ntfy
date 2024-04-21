@@ -23,6 +23,7 @@
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.0",
     "js-base64": "^3.7.2",
+    "mui-audio-player-plus": "^1.0.6",
     "react": "latest",
     "react-dom": "latest",
     "react-i18next": "^11.16.2",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
+    "babel-plugin-transform-amd-to-commonjs": "^1.6.0",
     "eslint": "^8.41.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
@@ -45,6 +47,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.8",
     "vite": "^4.3.9",
+    "vite-plugin-babel": "^1.2.0",
     "vite-plugin-pwa": "^0.15.0"
   },
   "browserslist": {
