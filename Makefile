@@ -91,8 +91,7 @@ update: web-deps-update cli-deps-update docs-deps-update
 docker-dev:
 	docker build \
 		--file ./Dockerfile-build \
-		--tag binwiederhier/ntfy:$(VERSION) \
-		--tag binwiederhier/ntfy:dev \
+		--tag ghcr.io/erictendian/ntfy \
 		--build-arg VERSION=$(VERSION) \
 		--build-arg COMMIT=$(COMMIT) \
 		./
